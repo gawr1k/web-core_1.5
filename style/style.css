@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "TTLakes-Regular";
+    src:url("./../fonts/TTLakes-Regular.woff");
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.page {
+    border-top: 1px solid #D9FFF5;
+    padding: 0;
+    margin: 0 auto;
+    background: #F8F8F8;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1120px;
+    box-sizing: border-box;
+}
+
+.page__title {
+    box-sizing: border-box;
+    height: 80px;
+    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    font-weight: 500;
+    margin: 0;
+    padding: 16px 16px;
+    font-family: "TTLakes-Regular";
+}
+
+.page__brand {
+    margin: 0;
+}
+
+.page__brand__list {
+    display: flex;
+    height: 130px;
+}
+
+.page__brand__list--hidden {
+    max-height: 175px;
+}
+
+.page__brand__list__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width:240px;
+    height: 72px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin-left: 16px;
+}
+
+.page__brand__list__card__img {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.page__brand__list__card__btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid #FF3E79;
+    background-color: #FFFFFF;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 154px;
+}
+
+.swiper-slide {
+    height: 72px;
+    width: 240px;
+}
+
+.swiper-pagination {
+    box-sizing: border-box;
+    margin-bottom: 38px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+    opacity: 1;
+}
+
+.show-all {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    background: #F8F8F8;
+    padding-top: 8px;
+    padding-left: 39px;
+    padding-bottom: 16px;
+}
+
+.show-all__button {
+    color: #1B1C21;
+    font-family: "TTLakes-Regular";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.show-all__icon {
+    margin-right: 5px;
+}
+
+.button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .page__title {
+        padding-left: 24px;
+    }
+
+    .show-all {
+        display: flex;
+        padding-top: 8px;
+    }
+
+    .page__brand__list {
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 100%
+    }
+
+    .page__brand__list__card {
+        margin-bottom: 16px;
+        margin-left: 24px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1120px) {
+    .page__title {
+        padding-left: 32px;
+    }
+
+    .page__brand__list__card {
+        margin-left: 32px;
+    }
+    
+}
